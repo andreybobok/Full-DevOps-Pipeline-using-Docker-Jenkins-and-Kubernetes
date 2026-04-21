@@ -15,7 +15,7 @@ pipeline {
 
         stage('Build Docker Image') {
             steps {
-                sh 'docker build -t $IMAGE_NAME:$IMAGE_TAG -f Dockerfile .'
+                sh 'docker build -t $IMAGE_NAME:$IMAGE_TAG -f app-demo/Dockerfile app-demo'
             }
         }
 
