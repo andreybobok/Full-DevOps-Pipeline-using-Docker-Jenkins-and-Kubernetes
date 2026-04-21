@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: app-demo
-          image: andreiboboc123/app-demo:1.0
+          image: andreiboboc123/app-demo:latest
           ports:
             - containerPort: 3000
           readinessProbe:
